@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  background-image: url(../img/tic\ tac\ toe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.message {
+  color: white;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 630px;
+  height: 630px;
+  margin-bottom: 30px;
+}
+.table__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  border-radius: 5%;
+}
+
+.bnt-restart {
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
